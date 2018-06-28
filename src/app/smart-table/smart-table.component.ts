@@ -26,23 +26,7 @@ export class SmartTableComponent implements OnInit {
       }
     }
   };
-/*
-  data = [
-    {
-      transactionID: 1,
-      transactionDate: "2017-02-11",
-      transactionAmount: 100.32,
-      transactionType: "Deposit"
-    },
-    {
-      transactionID: 2,
-      transactionDate: "2017-12-11",
-      transactionAmount: 302.32,
-      transactionType: "Withdrawal"
-    },
-    
-  ];
-*/
+
   data = this.transactions;
   constructor() { }
 

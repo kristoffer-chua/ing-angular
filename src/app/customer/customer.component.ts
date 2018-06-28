@@ -7,7 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CustomerComponent implements OnInit {
   @Input() customer;
-  
+
+
   constructor() { }
 
   ngOnInit() {
