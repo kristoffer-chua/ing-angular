@@ -1,0 +1,25 @@
+<form [formGroup]="myFormGroup" (ngSubmit)="submitForm(myFormGroup)" class="form-horizontal">
+
+  <div class="form-group row">
+    <div class="col-xs-4">
+      <label>Customer ID:</label>
+      <input [formControl]="myFormGroup.controls['customerID']" />
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-xs-2">
+      <label>Transaction Date:</label>
+      <input [formControl]="myFormGroup.controls['month']" placeholder="MM" size="2" />
+      <input [formControl]="myFormGroup.controls['year']" placeholder="YYYY" size="4" />
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <input type="submit" value="Search" [disabled]="!myFormGroup.valid" />
+  </div>
+
+</form>
+
+<app-customer [customer]="customer"></app-customer>
+<app-smart-table [transactions]="transactions"></app-smart-table>
